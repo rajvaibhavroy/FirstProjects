@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="maindiv"></div>
+    <script>
+        // let x='mini'          
+        // let y=89
+        // let z=x+y  
+        // console.log(z)
+
+
+        // let arr=[
+        //     {name:"toshi",age:32,marks:[32,48,0,15]},
+        //     {name:'dimpal',age:30,marks:[32,48,80,15]},
+        //     {name:'komal',age:29,marks:[39,48,70,15]},
+        //     {name:'sapna',age:35,marks:[71,48,91,15]},
+        // ]
+        // for(let i=0;i<arr.length;i++){
+        //     console.log(arr[i].marks)
+        //     let x=arr[i].marks
+        //     let maximum=x[0]
+        //     for(let i=0;i<x.length;i++){
+        //         if(x[i]>maximum){
+        //             maximum=x[i]
+        //         }
+        //     }
+        // }
+
+        // let string='radar'  
+        // x=string.length-1                                                                                                                                                                                                                                                                                                                                                                                                                                         =''
+        // while(x>=0){
+        //     bag=bag+string[x]
+        //     x--
+        // }
+        // if(string===bag){
+        //     console.log('palindrome')
+        // }
+        // else{
+        //     console.log('not palindrome')
+        // }
+
+
+        // let w=87
+        // let u='the technology'
+        // let r=w+u
+        // console.log(r)
+
+        // let bar=[54,89,3,0,13,67,0,23]
+        // console.log(bar)
+        // let maximum=0
+        // for(i=0;i<=bar.length;i++){
+
+        // }
+
+
+        function calculate(abc){
+            return new Promise((resolve,reject)=>{
+                if(abc.length<3 ||abc.length>3){
+                    reject('array length is not three, It is less or more')
+                }
+                else{
+                    let sum=0
+                    for(let i=0;i<abc;i++){
+                        sum=sum+abc[i]
+                    }
+                    resolve(abc)
+                }
+            })
+        }
+        calculate([23,45,8]).then((res)=>{console.log(res)}).catch((err)=>{console.log(err)})
+
+
+
+        let x = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log('ram goes to shop')
+                setTimeout(() => {
+                    console.log('buyed colddrink and drunked')
+                    setTimeout(() => {
+                        console.log('Ram returns to home')
+                    }, 2000)
+                }, 4000)
+            }, 3000)
+        })
+
+
+        let y = 6
+        switch (y) {
+            case 1:
+                console.log('You had selected language english')
+                break;
+            case 2:
+                console.log('you had selected langauge hindi')
+                break;
+            case 3:
+                console.log('you had selected language marathi')
+                break;
+            default:
+                console.log('input value is incorect')
+        }
+
+        let v = document.getElementById('')
+
+
+
+    </script>
+</body>
+</html>
